@@ -83,7 +83,7 @@ class SvgImage extends Component {
                 height: 100,
                 backgroundColor: 'transparent',
               },
-              props.style,
+              style,
             ]}
             scrollEnabled={false}
             showsHorizontalScrollIndicator={false}
@@ -97,7 +97,7 @@ class SvgImage extends Component {
       return (
         <View
           pointerEvents="none"
-          style={[props.containerStyle, props.style]}
+          style={[ontainerStyle, style]}
         />
       );
     }

@@ -1,4 +1,4 @@
-# react-native-remote-svg
+# react-native-svg-remote
 
 `Image` component that supports svg filetype in
 [React Native](https://facebook.github.io/react-native).
@@ -7,7 +7,7 @@
 
 Using [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/):
 
-    $ yarn add react-native-remote-svg
+    $ yarn add react-native-svg-remote
 
 `Image` component in react-native doesn't yet support svg file type. This
 package gives you an `Image` component that supports both svg and png file
@@ -31,13 +31,13 @@ You need to import `Image` from this package instead of from react-native
 
 ```diff
 - import { Image } from 'react-native'
-+ import Image from 'react-native-remote-svg'
++ import Image from 'react-native-svg-remote'
 ```
 
 and you can use this Image component like you normally would:
 
 ```js
-import Image from 'react-native-remote-svg';
+import Image from 'react-native-svg-remote';
 
 <Image
   source={{ uri: 'https://example.com/my-pic.svg' }}
@@ -48,7 +48,7 @@ import Image from 'react-native-remote-svg';
 supports data uri as well:
 
 ```js
-import Image from 'react-native-remote-svg';
+import Image from 'react-native-svg-remote';
 
 <Image
   source={{
@@ -106,4 +106,4 @@ this component directly into react-native itself.
 ## Issues
 
 If you find a bug, please file an issue on
-[our issue tracker on GitHub](https://facebook.github.io/react-native-remote-svg/issues).
+[our issue tracker on GitHub](https://facebook.github.io/react-native-svg-remote/issues).
