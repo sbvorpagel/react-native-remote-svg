@@ -65,14 +65,14 @@ class SvgImage extends Component {
     }
   };
   render() {
-    const props = this.props;
+    const { style, containerStyle, androidHardwareAccelerationDisabled } = this.props;
     const { svgContent } = this.state;
     if (svgContent) {
-      const flattenedStyle = StyleSheet.flatten(props.style) || {};
+      const flattenedStyle = StyleSheet.flatten(style) || {};
       const html = getHTML(svgContent, flattenedStyle);
 
       return (
-        <View pointerEvents="none" style={[props.style, props.containerStyle]}>
+        <View pointerEvents="none" style={[style, containerStyle]}>
           <WebView
             originWhitelist={['*']}
             scalesPageToFit={true}
@@ -88,6 +88,7 @@ class SvgImage extends Component {
             scrollEnabled={false}
             showsHorizontalScrollIndicator={false}
             showsVerticalScrollIndicator={false}
+            androidHardwareAccelerationDisabled={androidHardwareAccelerationDisabled}
             source={{ html }}
           />
         </View>
