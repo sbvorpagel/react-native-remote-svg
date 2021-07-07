@@ -97,7 +97,7 @@ class SvgImage extends Component {
       return (
         <View
           pointerEvents="none"
-          style={[ontainerStyle, style]}
+          style={[containerStyle, style]}
         />
       );
     }
